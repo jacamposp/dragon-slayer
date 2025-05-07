@@ -1,0 +1,17 @@
+{
+  "name": "dragon-slayer",
+  "version": "1.0.0",
+  "description": "Interactive console adventure using TypeScript.",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc"
+  },
+  "author": "joe-dev",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "ts-node": "^10.0.0",
+    "typescript": "^5.0.0"
+  }
+}

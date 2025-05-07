@@ -1,0 +1,8 @@
+---
+
+### 🧼 `.gitignore`
+
+```gitignore
+node_modules/
+dist/
+.env
