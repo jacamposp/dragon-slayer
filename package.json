@@ -4,14 +4,19 @@
   "description": "Interactive console adventure using TypeScript.",
   "main": "dist/index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "ts-node src/game.ts",
     "build": "tsc"
   },
   "author": "joe-dev",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@types/readline-sync": "^1.4.8",
+    "inquirer": "^12.6.2",
+    "readline-sync": "^1.4.10"
+  },
   "devDependencies": {
-    "ts-node": "^10.0.0",
-    "typescript": "^5.0.0"
+    "@types/inquirer": "^9.0.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   }
 }
