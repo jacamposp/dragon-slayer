@@ -1,0 +1,49 @@
+{
+  "id": "root",
+  "text": "Eres un valiente caballero del Reino de Eldoria. El rey te encomienda una misión: recuperar la Espada de la Luz, robada por un antiguo dragón que habita en las Montañas Negras.",
+  "options": [
+    {
+      "text": "Aceptar la misión y partir al amanecer",
+      "nextNode": {
+        "id": "preparación",
+        "text": "Estás en tu hogar, afilando tu espada para el arduo viaje que tienes que emprender. Pasarás por diferentes cuidades antes de llegar a las montañas negras.",
+        "options": [
+          {
+            "text": "Levantarse para empezar la aventura",
+            "nextNode": {
+              "id": "primerEncuentro",
+              "text": "Te encuentras unos ladrones en la entrada de tu aldea...",
+              "options": [
+                {
+                  "text": "Luchar contra ellos para salvar la aldea",
+                  "nextNode": {
+                    "id": "primeraPelea",
+                    "enemy": "Thief",
+                    "text": "Los logras vencer, salvas tu aldea y continuas tu aventura",
+                    "options": []
+                  }
+                },
+                {
+                  "text": "Evitas la pelea",
+                  "nextNode": {
+                    "id": "evitar",
+                    "text": "Evitaste la pelea pero los ladrones te emboscan y te matan en el camino, tu aldea fue quemada",
+                    "options": []
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "Rechazar la misión",
+      "nextNode": {
+        "id": "rechazo",
+        "text": "El rey se decepciona de ti. Vives una vida tranquila pero sin gloria. La Espada de la Luz se pierde para siempre.",
+        "options": []
+      }
+    }
+  ]
+}
